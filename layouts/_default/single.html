@@ -16,13 +16,23 @@
                       {{ with .Params.tags }}
                       {{ if ge (len .) 1 }}
                           {{ range . }}
-                              <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>
+                              <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">#{{ . }}</a>
                           {{ end }}
                       {{ end }}
                       {{ end}}
                       </span>
                     </h2>
                 </header>
+
+                {{ if $.Params.image }}
+                    <figure id="post-image">
+                        <img src="{{ $.Param "image.src" }}" alt="{{ .Title }}" />
+                        <figcaption>
+                            {{ $.Param "image.caption" | markdownify }}
+                        </figcaption>
+                    </figure>
+                {{ end }}
+
                 {{ if .Site.Params.enableToc }}
                   {{ if .TableOfContents }}
                     <div id="toc">
