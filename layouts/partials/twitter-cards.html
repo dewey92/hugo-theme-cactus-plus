@@ -24,7 +24,7 @@
   {{ end }}
   <!-- no post authors, show site author -->
   {{ if eq (len .Site.Authors) 0 }}
-    <meta name="twitter:creator" content="@{{ .Site.Params.author }}"/>
+    <meta name="twitter:creator" content="@{{ .Site.Params.twitter }}"/>
   {{ end }}
 
 {{ else }}
