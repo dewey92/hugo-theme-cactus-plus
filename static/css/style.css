@@ -475,6 +475,20 @@ img {
     border-radius: 3px;
 }
 
+figure.fig-center {
+}
+
+figure.fig-center img {
+    display: block;
+    margin: auto;
+}
+
+figure.fig-center figcaption {
+    text-align: center;
+    font-size: 80%;
+    margin-bottom: 20px;
+}
+
 
 /* Made with Cactus Badge */
 
