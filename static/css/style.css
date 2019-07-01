@@ -30,6 +30,10 @@ table {
     border-spacing: 0
 }
 
+mark {
+    background-color: #bbffc7;
+}
+
 *, *:before, *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -483,10 +487,13 @@ figure.fig-center img {
     margin: auto;
 }
 
-figure.fig-center figcaption {
+figure.fig-center.img-60 img {
+    width: 60% !important;
+}
+
+figure.fig-center figcaption p {
     text-align: center;
     font-size: 80%;
-    margin-bottom: 20px;
 }
 
 
@@ -973,4 +980,15 @@ a.symbol:hover {
 }
 .page-tags ul li a:hover {
     color: #5694f1;
+}
+
+.share-this {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    text-align: right;
+}
+
+.share-this p {
+    font-size: 14px;
+    margin-bottom: 5px;
 }
