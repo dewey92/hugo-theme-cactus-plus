@@ -1,5 +1,9 @@
 /* Reset */
 
+:root {
+    --maxWidth: 670px;
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     border: 0;
     font-size: 100%;
@@ -159,7 +163,7 @@ h2 {
 }
 
 .profile h1 {
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0px;
     font-size: 26px;
     color: #222;
@@ -168,6 +172,7 @@ h2 {
 .profile h2 {
     font-size: 20px;
     font-weight: 300;
+    letter-spacing: 1px;
     color: #777;
     margin-top: 10px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -175,12 +180,12 @@ h2 {
 }
 
 nav.main-nav {
-    padding: 20px 20px 0;
-    background: #fff;
+    padding: 20px 0 0;
     background: rgba(255, 255, 255, .90);
     margin: 0 auto;
     text-align: right;
     z-index: 100;
+    max-width: var(--maxWidth);
 }
 
 nav.main-nav a {
@@ -188,7 +193,7 @@ nav.main-nav a {
     right: 6px;
     padding: 8px 12px;
     color: #5badf0;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.35;
     border-radius: 3px;
 }
@@ -578,7 +583,7 @@ Post List
 #header {
 }
 #wrapper.post {
-    max-width: 670px;
+    max-width: var(--maxWidth);
 }
 .post {
     margin: auto;
