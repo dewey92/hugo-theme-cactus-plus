@@ -27,7 +27,32 @@ pre code {
     overflow: auto;
 }
 
+.highlight {
+  overflow: auto;
+  margin-bottom: 30px;
+}
+
+.highlight pre {
+  margin-bottom: 0;
+}
+
+.highlight pre code {
+  overflow: hidden;
+}
+
 @media (max-width: 420px) {
+    pre, .highlight {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
+    .highlight pre {
+      overflow: auto;
+      min-width: 100%;
+      float: left;
+      margin: 0;
+    }
+
     pre code {
         font-size: 13px;
     }
