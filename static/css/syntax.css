@@ -1,37 +1,109 @@
-pre[class*="language-"], pre {
-  font-family: 'Menlo', 'Monaco', Courier, monospace;
-  box-shadow: inset 0 0 0 1px #E4EBF2;
-  border-radius: 4px;
+p > code {
+  background: #ffe0e087;
   font-size: 14px;
-  padding: 16px;
-  margin: 0 0 30px;
-  background: #282c34;
+  /*font-weight: 100;*/
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+  overflow: scroll;
+  font-family: 'Menlo', 'Monaco', Courier, monospace;
 }
 
 pre code {
   color: white;
+  width: 100%;
+}
+
+pre[class*="language-"], pre {
+  font-family: 'Menlo', 'Monaco', Courier, monospace !important;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 20px;
+  margin: 0 0 30px;
+  background: #282c34;
+  display: flex;
+}
+
+code[class*="language-"] {
+  font-family: 'Menlo', 'Monaco', Courier, monospace !important;
 }
 
 @media (max-width: 420px) {
-  pre[class*="language-"] {
+  pre[class*="language-"], pre {
     margin-left: -20px;
     margin-right: -20px;
+    font-size: 12px;
   }
 
   pre code {
-      font-size: 13px;
+    width: auto;
   }
+}
+
+table.lntable {
+  margin: 0;
+}
+
+td.lntd {
+  background: none;
+  padding: 0;
+}
+td.lntd:first-child {
+  width: 59px; /* magic number, needed as `td` is so dependednt on the width of its siblings */
+}
+
+td.lntd:first-child pre {
+  padding-right: 0;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
+}
+td.lntd:first-child .hl {
+  margin-right: -1px;
+  padding-right: 0;
+}
+
+td.lntd:last-child pre {
+  border-radius: 0 4px 4px 0;
+  padding-left: 0;
 }
 
 .hl {
   display: block;
   background-color: #354054;
   box-shadow: inset 3px 0px 0 0 #ffa644;
-  margin: 0 -15px;
-  padding: 0 15px;
+  margin: 0 -20px;
+  padding: 0 20px;
+}
+
+td.lntd:last-child .hl {
+  box-shadow: none;
 }
 
 .ln {
   margin-right: 20px;
   user-select: none;
+}
+
+@media (max-width: 420px) {
+  .highlight {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .highlight pre[class*="language-"] {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  td.lntd:first-child {
+    width: 37px;
+  }
+  td.lntd:first-child .hl {
+    margin-right: -10px;
+  }
+  td.lntd:last-child {
+    overflow: scroll;
+    max-width: calc(100vw - 37px); /* 37px is the width of the first td */
+  }
+  td.lntd:last-child pre {
+    padding-left: 10px;
+  }
 }
