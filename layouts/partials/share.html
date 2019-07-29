@@ -1,14 +1,23 @@
 <div class="share-this">
-  <p>Share this:</p>
-  <a class="twitter"
-    href="https://twitter.com/intent/tweet?text={{ .Permalink }} - {{ .LinkTitle }} {{ with .Site.Params.twitter }}by @{{ . }}{{ end }}"><span
-      class="icon-twitter"> {{ .Site.Params.tweet | default "tweet" }}</span></a>
-
-  <a class="facebook" href="#" onclick="
+  <h4>
+    <a href="{{ .Site.Params.githubLink }}/blob/master/content/{{ .File.Path }}" target="_blank">Edit on &nbsp;<span class="fa fa-github"></span></a>
+    <span class="dot"></span>
+    <a
+      class="twitter"
+      href="https://twitter.com/intent/tweet?text={{ .Permalink }} - {{ .LinkTitle }} {{ with .Site.Params.twitter }}by @{{ . }}{{ end }}"
+      target="_blank"
+    >
+      Share on &nbsp;<span class="icon-twitter"></span></a>
+    <span class="dot"></span>
+    <a
+      class="facebook"
+      href="#"
+      onclick="
       window.open(
         'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
         'facebook-share-dialog',
         'width=626,height=436');
-      return false;"><span class="icon-facebook-rect"> {{ .Site.Params.share | default "Share" }}</span>
-  </a>
+      return false;">Share on &nbsp;<span class="icon-facebook-rect"></span>
+    </a>
+  </h4>
 </div>
