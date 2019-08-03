@@ -15,8 +15,12 @@
 		<link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico">
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
 		<!-- <link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.css"> -->
+
+		{{ if not .IsHome }}
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/prism.css">
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/syntax.css">
+		<!-- <link rel="stylesheet" href="{{ .Site.BaseURL }}css/terminal.css"> -->
+		{{ end }}
 
 		{{ if eq .Site.Params.iconFont "font-awesome" }}
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css">
