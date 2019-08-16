@@ -1,4 +1,4 @@
-p > code {
+code:not([class*="language-"]) {
   background: #ffe0e087;
   font-size: 14px;
   /*font-weight: 100;*/
