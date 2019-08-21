@@ -19,8 +19,9 @@ pre[class*="language-"], pre {
   border-radius: 4px;
   font-size: 14px;
   padding: 30px;
-  margin: 0 -60px 30px;
-  background: #282c34;
+  margin: 0 -30px 30px;
+  /* background: #282c34; */
+  background: #f7faff8c;
   display: flex;
 }
 
@@ -58,6 +59,7 @@ td.lntd:first-child pre {
   padding-right: 0;
   border-radius: 4px 0 0 4px;
   overflow: hidden;
+  border-right: none;
 }
 td.lntd:first-child .hl {
   margin-right: -1px;
@@ -67,11 +69,13 @@ td.lntd:first-child .hl {
 td.lntd:last-child pre {
   border-radius: 0 4px 4px 0;
   padding-left: 0;
+  border-left: none;
 }
 
 .hl {
   display: block;
-  background-color: #354054;
+  /* background-color: #354054; */
+  background-color: #ecf6ff;
   box-shadow: inset 3px 0px 0 0 #ffa644;
   margin: 0 -30px;
   padding: 0 30px;
