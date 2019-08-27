@@ -1,5 +1,6 @@
 code:not([class*="language-"]) {
-  background: #ffe0e087;
+  background: #f9f9f9;
+  color: #bf616a;
   font-size: 14px;
   /*font-weight: 100;*/
   padding: 4px;
