@@ -521,6 +521,25 @@ figure.fig-center figcaption p {
 	font-size: 80%;
 }
 
+.aligned-images {
+	margin: -40px -120px 0;
+	display: flex;
+	align-items: flex-start;
+}
+
+.aligned-images > img {
+	width: 50%;
+}
+
+@media (max-width: 420px) {
+	.aligned-images {
+		margin: -40px 0 0;
+		flex-direction: column;
+	}
+	.aligned-images > img {
+		width: 100%;
+	}
+}
 
 /* Made with Cactus Badge */
 
