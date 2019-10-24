@@ -41,6 +41,10 @@ mark {
 	background-color: #bbffc7;
 }
 
+small {
+	font-size: 80%;
+}
+
 *, *:before, *:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;

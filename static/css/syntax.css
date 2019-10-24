@@ -2,12 +2,13 @@ code:not([class*="language-"]) {
   background: #f9f9f9;
   color: #bf616a;
   font-size: 14px;
-  /*font-weight: 100;*/
-  padding: 4px;
+  padding: 0 4px;
   border: none;
   border-radius: 4px;
   overflow: scroll;
   font-family: 'Menlo', 'Monaco', Courier, monospace;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 pre code {
