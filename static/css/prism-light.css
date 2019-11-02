@@ -5,7 +5,7 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-    color: #393A34;
+    color: #205a69;
     font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
     direction: ltr;
     text-align: left;
@@ -40,7 +40,7 @@ pre[class*="language-"] {
     padding: 1em;
     margin: .5em 0;
     overflow: auto;
-    border: 1px solid #dddddd;
+    border: 1px solid #f1f4ff;
     background-color: white;
 }
 
@@ -71,9 +71,11 @@ pre[class*="language-"] {
 .token.attr-value {
     color: #e3116c;
 }
-.token.punctuation,
-.token.operator {
+.token.punctuation {
     color: #393A34; /* no highlight */
+}
+.token.operator {
+    color: #de8500;
 }
 
 .token.entity,

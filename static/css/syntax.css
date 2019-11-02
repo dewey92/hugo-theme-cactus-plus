@@ -29,7 +29,7 @@ pre[class*="language-"], pre {
 
 code[class*="language-"] {
   font-family: 'Menlo', 'Monaco', Courier, monospace !important;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 @media (max-width: 420px) {

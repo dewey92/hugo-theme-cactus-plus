@@ -1057,3 +1057,16 @@ span.dot::before {
 		display: none;
 	}
 }
+
+.stripes {
+	background: repeating-linear-gradient(135deg, white, white 40px, #f5fdf6 40px, #f5fdf6 80px);
+	padding: 0 30px;
+	margin: 0 -30px;
+}
+
+@media screen and (max-width: 540px) {
+	.stripes {
+		padding: 0 20px;
+    margin: 0 -20px;
+	}
+}
