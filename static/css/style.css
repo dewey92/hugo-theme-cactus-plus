@@ -508,9 +508,6 @@ img {
 	border-radius: 3px;
 }
 
-figure.fig-center {
-}
-
 figure.fig-center img {
 	display: block;
 	margin: auto;
@@ -518,6 +515,10 @@ figure.fig-center img {
 
 figure.fig-center.img-60 img {
 	width: 60% !important;
+}
+
+figure.fig-center.img-80 img {
+	width: 80% !important;
 }
 
 figure.fig-center figcaption p {
