@@ -22,7 +22,6 @@ pre[class*="language-"], pre {
   font-size: 14px;
   padding: 30px;
   margin: 0 -30px 30px;
-  /* background: #282c34; */
   background: #f7faff8c;
   display: flex;
 }
@@ -45,50 +44,18 @@ code[class*="language-"] {
   }
 }
 
-table.lntable {
-  margin: 0;
-}
-
-td.lntd {
-  background: none;
-  padding: 0;
-}
-td.lntd:first-child {
-  width: 59px; /* magic number, needed as `td` is so dependednt on the width of its siblings */
-}
-
-td.lntd:first-child pre {
-  padding-right: 0;
-  border-radius: 4px 0 0 4px;
-  overflow: hidden;
-  border-right: none;
-}
-td.lntd:first-child .hl {
-  margin-right: -1px;
-  padding-right: 0;
-}
-
-td.lntd:last-child pre {
-  border-radius: 0 4px 4px 0;
-  padding-left: 0;
-  border-left: none;
-}
-
 .hl {
   display: block;
-  /* background-color: #354054; */
   background-color: #ecf6ff;
   box-shadow: inset 3px 0px 0 0 #ffa644;
   margin: 0 -30px;
   padding: 0 30px;
 }
 
-td.lntd:last-child .hl {
-  box-shadow: none;
-}
-
 .ln, .lnt {
   user-select: none;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 @media (max-width: 420px) {
@@ -100,17 +67,8 @@ td.lntd:last-child .hl {
     margin-left: 0;
     margin-right: 0;
   }
-  td.lntd:first-child {
-    width: 37px;
-  }
-  td.lntd:first-child .hl {
-    margin-right: -10px;
-  }
-  td.lntd:last-child {
-    overflow: scroll;
-    max-width: calc(100vw - 37px); /* 37px is the width of the first td */
-  }
-  td.lntd:last-child pre {
-    padding-left: 10px;
+  .hl {
+    margin: 0 -20px;
+    padding: 0 20px;
   }
 }
