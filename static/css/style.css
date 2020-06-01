@@ -122,6 +122,13 @@ small {
 	margin-bottom: 30px;
 }
 
+#post-body ul ul, #post-body ul p, #post-body ol p {
+	margin-bottom: 0;
+}
+
+#post-body p + ul, #post-body p + ol {
+	margin-top: -20px;
+}
 
 /* Base */
 
@@ -288,7 +295,7 @@ ul {
 li {
 	list-style-position: outside;
 	/* text-indent: -1.5em; */
-	margin-left: 1.5em;
+	margin-left: 1.7em;
 }
 
 ul>li {
