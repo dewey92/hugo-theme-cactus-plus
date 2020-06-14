@@ -315,6 +315,9 @@ ul>li {
 		font-size: 14px;
 		text-align: justify;
 	}
+	#post-body h2, #post-body h3 {
+		text-align: left;
+	}
 }
 
 #post-body p > a {
