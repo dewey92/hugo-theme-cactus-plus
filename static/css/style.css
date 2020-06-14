@@ -21,7 +21,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-	line-height: 1
+	line-height: 1;
+	-webkit-text-size-adjust: 100%;
 }
 
 blockquote, q {
