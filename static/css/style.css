@@ -252,7 +252,13 @@ nav.main-nav a.cta {
 #wrapper.home {
 	max-width: 600px;
 	margin: 0 auto;
-	padding: 0px 40px 20px 40px;
+	padding: 0 40px 20px;
+}
+
+@media (max-width: 420px) {
+	#wrapper.home {
+		padding: 0 0 20px;
+	}
 }
 
 .home #avatar {
@@ -313,8 +319,7 @@ ul>li {
 
 @media (max-width: 420px) {
 	#post-body, p {
-		font-size: 14px;
-		text-align: justify;
+		font-size: 16px;
 	}
 	#post-body h2, #post-body h3 {
 		text-align: left;
@@ -533,6 +538,16 @@ figure.fig-center.img-80 img {
 	width: 80% !important;
 }
 
+@media (max-width: 420px) {
+	figure.fig-center.img-60 img {
+		width: 75% !important;
+	}
+
+	figure.fig-center.img-80 img {
+		width: 85% !important;
+	}
+}
+
 figure.fig-center figcaption p {
 	text-align: center;
 	font-size: 80%;
@@ -582,6 +597,12 @@ Post List
 
 #post-list li:last-child {
 	margin-bottom: 0;
+}
+
+@media (max-width: 420px) {
+	#post-list li, #archive-list li {
+		margin: 0 20px 20px;
+	}
 }
 
 #post-list li+li {
@@ -737,6 +758,12 @@ Post List
 
 #post-nav span.next {
 	float: right;
+}
+
+@media (max-width: 420px) {
+	#post-nav span.next {
+		margin-right: 20px;
+	}
 }
 
 #post-nav span .arrow {

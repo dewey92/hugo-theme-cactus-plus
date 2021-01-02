@@ -5,7 +5,7 @@ code:not([class*="language-"]) {
   padding: 0 4px;
   border: none;
   border-radius: 4px;
-  overflow: scroll;
+  overflow: auto;
   font-family: 'Menlo', 'Monaco', Courier, monospace;
   display: inline-block;
   vertical-align: middle;
@@ -37,7 +37,7 @@ code[class*="language-"] {
     margin-left: -20px;
     margin-right: -20px;
     padding: 20px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   pre code {
