@@ -1,9 +1,9 @@
 /* Reset */
 
 :root {
-	--maxWidth: 750px;
+	--maxWidth: 720px;
 	--marginOut: -60px;
-	--font-1: "Work Sans";
+	--font-1: "Overpass", sans-serif;
 	--font-2: "Helvetica Neue";
 }
 
@@ -140,7 +140,7 @@ html, body {
 body {
 	/* font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif; */
 	font: 16px/1 var(--font-1), sans-serif;
-	color: rgb(34, 36, 38);
+	color: #444;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
@@ -314,12 +314,12 @@ ul>li {
 
 #post-body, p {
 	line-height: 1.7;
-	font-size: 17px;
+	font-size: 20px;
 }
 
 @media (max-width: 420px) {
 	#post-body, p {
-		font-size: 16px;
+		font-size: 18px;
 	}
 	#post-body h2, #post-body h3 {
 		text-align: left;
@@ -376,7 +376,7 @@ em, i {
 	margin-top: 40px;
 	margin-bottom: 20px;
 	color: #222;
-	font: 600 42px/1.4em var(--font-1), Helvetica, Arial, sans-serif;
+	font: 600 50px/1.4em var(--font-1), Helvetica, Arial, sans-serif;
 }
 
 .post h2 {
@@ -424,8 +424,8 @@ em, i {
 }
 
 #post-list h2 {
-	font: normal 16px/1.5em var(--font-1), Helvetica, Arial, sans-serif;
-	color: #555;
+	font: normal 18px/1.7em var(--font-1), Helvetica, Arial, sans-serif;
+	color: #777;
 	margin-top: 2px;
 }
 
@@ -482,7 +482,6 @@ table {
 	width: 100%;
 	margin: 40px 0;
 	border-collapse: collapse;
-	font-size: 13px;
 	line-height: 1.5em;
 }
 
@@ -593,6 +592,7 @@ Post List
 
 #post-list li, #archive-list li {
 	list-style-type: none;
+	margin-left: 0;
 }
 
 #post-list li:last-child {
@@ -612,7 +612,7 @@ Post List
 #post-list a {
 	color: #007dd1;
 	display: block;
-	font: bold 19px/1.7 var(--font-2), helvetica, Arial, sans-serif;
+	font: bold 22px/1.7 var(--font-2), helvetica, Arial, sans-serif;
 }
 
 #post-list .dates {
@@ -761,6 +761,9 @@ Post List
 }
 
 @media (max-width: 420px) {
+	#post-nav span.prev {
+		margin-left: 20px;
+	}
 	#post-nav span.next {
 		margin-right: 20px;
 	}
@@ -1109,4 +1112,8 @@ span.dot::before {
 		padding: 0 20px;
     margin: 0 -20px;
 	}
+}
+
+.twitter-tweet {
+	margin: auto;
 }

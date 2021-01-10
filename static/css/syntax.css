@@ -1,7 +1,7 @@
 code:not([class*="language-"]) {
   background: #f9f9f9;
   color: #bf616a;
-  font-size: 14px;
+  font-size: 17px;
   padding: 0 4px;
   border: none;
   border-radius: 4px;
@@ -9,6 +9,12 @@ code:not([class*="language-"]) {
   font-family: 'Menlo', 'Monaco', Courier, monospace;
   display: inline-block;
   vertical-align: middle;
+}
+
+@media (max-width: 420px) {
+  code:not([class*="language-"]) {
+    font-size: 14px;
+  }
 }
 
 pre code {
@@ -19,7 +25,7 @@ pre code {
 pre[class*="language-"], pre {
   font-family: 'Menlo', 'Monaco', Courier, monospace !important;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 15px;
   padding: 30px;
   margin: 0 -30px 30px;
   background: #f7faff8c;
@@ -29,7 +35,7 @@ pre[class*="language-"], pre {
 code[class*="language-"] {
   font-family: 'Menlo', 'Monaco', Courier, monospace !important;
   line-height: 1.6;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 @media (max-width: 420px) {
