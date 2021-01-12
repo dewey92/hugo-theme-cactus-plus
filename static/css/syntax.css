@@ -6,7 +6,7 @@ code:not([class*="language-"]) {
   border: none;
   border-radius: 4px;
   overflow: auto;
-  font-family: 'Menlo', 'Monaco', Courier, monospace;
+  font-family: var(--font-mono);
   display: inline-block;
   vertical-align: middle;
 }
@@ -23,7 +23,7 @@ pre code {
 }
 
 pre[class*="language-"], pre {
-  font-family: 'Menlo', 'Monaco', Courier, monospace !important;
+  font-family: var(--font-mono);
   border-radius: 4px;
   font-size: 15px;
   padding: 30px;
@@ -33,7 +33,7 @@ pre[class*="language-"], pre {
 }
 
 code[class*="language-"] {
-  font-family: 'Menlo', 'Monaco', Courier, monospace !important;
+  font-family: var(--font-mono);
   line-height: 1.6;
   font-size: 1em;
 }
