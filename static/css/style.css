@@ -617,11 +617,9 @@ Post List
 }
 
 #post-list .dates {
-	float: right;
-	position: relative;
-	top: 1px;
-	font: 300 17px/1.8 var(--font-2), helvetica, Arial, sans-serif;
+	font: 300 15px/1.8 var(--font-2), helvetica, Arial, sans-serif;
 	color: #777;
+	margin-top: 5px;
 }
 
 #post-list-footer {

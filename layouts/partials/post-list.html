@@ -3,9 +3,11 @@
     {{ $url := replace .Permalink .Site.BaseURL "" }}
         {{ if ne $url "about/" }}
             <li>
-                <aside class="dates">{{ .Date.Format "Jan 2" }}</aside>
                 <a href='{{ .Permalink }}'>
                     {{ .Title }}
+										<aside class="dates">
+											{{ .Date.Format "January 2, 2006" }}&nbsp;&nbsp;•&nbsp;&nbsp;{{ .ReadingTime }} min read
+										</aside>
                     {{ if .Site.Params.enableSummary }}
                         {{ if .Site.Params.useDescriptionReplaceSummary }}
                             <h2>{{ .Description | plainify }}</h2>
