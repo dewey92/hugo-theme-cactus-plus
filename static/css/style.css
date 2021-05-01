@@ -850,7 +850,7 @@ h2.month {
 }
 
 #post-list.archive.readmore a {
-	font: 400 16px/1.6 var(--font-2), helvetica, Arial, sans-serif;
+	font: 400 18px/1.6 var(--font-2), helvetica, Arial, sans-serif;
 	color: #5694f1;
 }
 
@@ -859,7 +859,7 @@ h2.month {
 }
 
 #post-list.archive.readmore .dates {
-	font: 300 16px/1.6 var(--font-2), helvetica, Arial, sans-serif;
+	font: 300 13px/1.6 var(--font-2), helvetica, Arial, sans-serif;
 }
 
 #disqus_thread, #ds-thread {
