@@ -1,7 +1,7 @@
 code:not([class*="language-"]) {
   background: #f9f9f9;
   color: #bf616a;
-  font-size: 17px;
+  font-size: 15px;
   padding: 0 4px;
   border: none;
   border-radius: 4px;
